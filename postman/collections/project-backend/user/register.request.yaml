@@ -1,0 +1,40 @@
+$kind: http-request
+name: register
+url: "{{server}}/users/register"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: fullName
+      value: one
+      description: ""
+      disabled: false
+    - type: text
+      key: email
+      value: one@two.com
+      description: ""
+      disabled: false
+    - type: text
+      key: password
+      value: "123"
+      description: ""
+      disabled: false
+    - type: text
+      key: username
+      value: rolly
+      description: ""
+      disabled: false
+    - type: file
+      key: avatar
+      src:
+        - postman-cloud:///1f18aaf7-3afd-4890-890d-01ae33c5d255
+      description: ""
+      disabled: false
+    - type: file
+      key: coverImage
+      src:
+        - postman-cloud:///1f18aaf7-4728-4c50-9b12-e836b1259bfa
+      description: ""
+      disabled: false
+order: 1785331612678
